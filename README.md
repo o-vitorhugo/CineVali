@@ -23,6 +23,8 @@ O **CineVali** simula um sistema de site para cinemas, com páginas como seleç�
 🖥️ Foco na estrutura, layout visual e usabilidade para desktop.  
 📄 Projeto totalmente estático (sem integração com back-end).  
 
+🌐 Acesse o projeto finalizado, online, através do [link](https://cinevali.vercel.app/).
+
 ## 🔧 Melhorias Futuras
 
 - [ ] Adição de **media queries** para tornar o layout responsivo em dispositivos móveis.  
