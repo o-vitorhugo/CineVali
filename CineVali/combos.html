@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/combos.css">
+    <title>Escolha seus produtos • CineVali</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="./assets/images/global/logo.png" alt="Logo CineVali" class="logo">
+            <p class="texto2">Escolha seus Produtos</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img src="./assets/images/combos/banner.jpg" alt="Banner do Filme Superman">
+        </div>
+
+        <h1 class="titulo-pagina">Escolha seus produtos</h1>
+
+        <div class="produtos-container">
+
+            <div id="produto1" class="card" data-preco="15.00">
+                <img src="./assets/images/combos/pipoca-pequena.png" alt="Pipoca pequena">
+                <p class="titulo">Pipoca pequena</p>
+                <div class="info-produto">
+                    <p class="preco">R$ 15,00</p>
+                </div>
+                <div class="quantidade-container">
+                    <button onclick="alterarQuantidade(this, -1)">-</button>
+                    <span class="quantidade">0</span>
+                    <button onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div id="produto2" class="card" data-preco="20.00">
+                <img src="./assets/images/combos/pipoca-media.png" alt="Pipoca média">
+                <p class="titulo">Pipoca média</p>
+                <div class="info">
+                    <p>R$ 20,00</p>
+                </div>
+                <div class="quantidade-container">
+                    <button onclick="alterarQuantidade(this, -1)">-</button>
+                    <span class="quantidade">0</span>
+                    <button onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div id="produto3" class="card" data-preco="25.00">
+                <img src="./assets/images/combos/pipoca-grande.png" alt="Pipoca grande">
+                <p class="titulo">Pipoca grande</p>
+                <div class="info">
+                    <p>R$ 25,00</p>
+                </div>
+                <div class="quantidade-container">
+                    <button onclick="alterarQuantidade(this, -1)">-</button>
+                    <span class="quantidade">0</span>
+                    <button onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div id="produto4" class="card" data-preco="10.00">
+                <img src="./assets/images/combos/refrigerante.png" alt="Refrigerante">
+                <p class="titulo">Refrigerante</p>
+                <div class="info">
+                    <p>R$ 10,00</p>
+                </div>
+                <div class="quantidade-container">
+                    <button onclick="alterarQuantidade(this, -1)">-</button>
+                    <span class="quantidade">0</span>
+                    <button onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div id="produto5" class="card" data-preco="6.00">
+                <img src="./assets/images/combos/agua.png" alt="Água Crystal Com ou Sem Gás">
+                <p class="titulo">Água Crystal Com ou Sem Gás</p>
+                <div class="info">
+                    <p>R$ 6,00</p>
+                </div>
+                <div class="quantidade-container">
+                    <button onclick="alterarQuantidade(this, -1)">-</button>
+                    <span class="quantidade">0</span>
+                    <button onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div id="produto6" class="card" data-preco="8.00">
+                <img src="./assets/images/combos/suco.png" alt="Suco Del Valle">
+                <p class="titulo">Suco Del Valle</p>
+                <div class="info">
+                    <p>R$ 8,00</p>
+                </div>
+                <div class="quantidade-container">
+                    <button onclick="alterarQuantidade(this, -1)">-</button>
+                    <span class="quantidade">0</span>
+                    <button onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div id="produto7" class="card" data-preco="7.00">
+                <img src="./assets/images/combos/fini.png" alt="Fini">
+                <p class="titulo">Fini</p>
+                <div class="info">
+                    <p>R$ 7,00</p>
+                </div>
+                <div class="quantidade-container">
+                    <button onclick="alterarQuantidade(this, -1)">-</button>
+                    <span class="quantidade">0</span>
+                    <button onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div id="produto8" class="card" data-preco="9.00">
+                <img src="./assets/images/combos/m&ms.png" alt="M&M's">
+                <p class="titulo">M&M's</p>
+                <div class="info">
+                    <p>R$ 9,00</p>
+                </div>
+                <div class="quantidade-container">
+                    <button onclick="alterarQuantidade(this, -1)">-</button>
+                    <span class="quantidade">0</span>
+                    <button onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div class="combo-card">
+                <img src="./assets/images/combos/combos.png" alt="Combos de pipoca">
+                <div class="combo-div">
+                    <div id="produto9" data-preco="38.00">
+                        <p class="titulo">Combo pipoca grande e 2 refrigerantes</p>
+                        <div class="info">
+                            <p>R$ 38,00</p>
+                        </div>
+                        <div class="quantidade-container">
+                            <button onclick="alterarQuantidade(this, -1)">-</button>
+                            <span class="quantidade">0</span>
+                            <button onclick="alterarQuantidade(this, 1)">+</button>
+                        </div>
+                    </div>
+
+                    <div id="produto10" data-preco="45.00">
+                        <p class="titulo">Combo balde de pipoca e 2 refrigerantes</p>
+                        <div class="info">
+                            <p>R$ 45,00</p>
+                        </div>
+                        <div class="quantidade-container">
+                            <button onclick="alterarQuantidade(this, -1)">-</button>
+                            <span class="quantidade">0</span>
+                            <button onclick="alterarQuantidade(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="total-container">
+            <p>Total: <span id="valor-total">R$ 0,00</span></p>
+        </div>
+
+        <div class="botao-proximo-container">
+            <a href="./pagamento.html" class="botao-proximo">Próximo</a>
+        </div>
+    </main>
+
+    <footer>
+        <small>&copy; CineVali - Desenvolvido por Vitor Hugo Reis e Thiago Wyse</small>
+    </footer>
+
+    <script type="text/javascript" src="./assets/scripts/combos.js"></script>
+</body>
+
+</html>

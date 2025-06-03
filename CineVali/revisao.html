@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/revisao.css">
+    <title>Revisar Compra • CineVali</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="./assets/images/global/logo.png" alt="Logo CineVali" class="logo">
+            <p class="texto2">Revisar Compra</p>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="titulo-pagina">Resumo da Compra</h1>
+
+        <div class="revisao-container">
+            <h2>Filme Selecionado</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Filme</th>
+                        <th>Gênero</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                        <th>Sala</th>
+                        <th>Preço Unitário</th>
+                        <th>Quantidade de Ingressos</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="filme-nome">-</td>
+                        <td id="filme-genero">-</td>
+                        <td id="data-filme">-</td>
+                        <td id="filme-horario">-</td>
+                        <td id="filme-sala">-</td>
+                        <td id="ingresso-preco">R$ 0,00</td>
+                        <td id="quantidade-ingressos">0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-container">
+                <p class="total-texto">Total: <span id="valor-total-ingressos">R$ 0,00</span></p>
+            </div>
+
+            <h2>Assentos Selecionados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Assento</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody_assentos">
+                </tbody>
+            </table>
+
+            <h2>Produtos Selecionados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço Unitário</th>
+                        <th>Quantidade</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody_produtos">
+                </tbody>
+            </table>
+            <div class="total-container">
+                <p class="total-texto">Total: <span id="valor-total-produtos">R$ 0,00</span></p>
+            </div>
+
+
+            <h2 id="metodo-pagamento-titulo">Método de Pagamento:</h2>
+
+            <div class="valor-total-container">
+                <label for="valor-total">Valor Total (R$):</label>
+                <span id="valor-total-geral">R$ 0,00</span>
+            </div>
+
+            <div class="valor-pago-container">
+                <label for="valor-pago">Valor Pago (R$):</label>
+                <span id="valor-pago">R$ 0,00</span>
+            </div>
+
+            <div class="troco-total-container">
+                <p class="troco-texto">Troco: <span id="valor-troco">R$ 0,00</span></p>
+            </div>
+
+            <div class="botao-proximo-container">
+                <button class="botao-proximo" onclick="finalizarCompra()">Finalizar Compra</button>
+            </div>
+
+            <div id="modal-obrigado" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 1000;">
+                <div style="background: #fff; margin: 10% auto; padding: 30px; border-radius: 10px; text-align: center; width: 400px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
+                    <img src="https://img.icons8.com/ios-filled/100/000000/movie-projector.png" alt="Cinema Icon" style="width: 60px; margin-bottom: 20px;">
+                    <h2 style="font-size: 26px; font-weight: 600; color: #007BFF;">Obrigado por comprar!</h2>
+                    <p style="font-size: 18px; line-height: 1.5; color: #555;">Esperamos que aproveite sua experiência! Em breve, seu filme estará começando.</p>
+                    <button id="fechar-modal-obrigado" style="background: #007BFF; color: white; border: none; padding: 15px 30px; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 20px; transition: background-color 0.3s ease;">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <small>&copy; CineVali - Desenvolvido por Vitor Hugo Reis e Thiago Wyse</small>
+    </footer>
+
+    <script src="./assets/scripts/revisao.js"></script>
+</body>
+
+</html>

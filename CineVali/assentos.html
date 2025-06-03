@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/assentos.css">
+    <title>Escolha seus assentos • CineVali</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="./assets/images/global/logo.png" alt="Logo CineVali" class="logo">
+            <p class="texto2">Escolha seus Assentos</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="assentos-container">
+            <p>Escolha seus assentos clicando nas cadeiras disponíveis.</p>
+
+            <div class="mapa-assentos">
+                <!-- Fileira A -->
+                <div class="assento-container">
+                    <span class="posicao">A1</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoA1" data-posicao="A1" onclick="selecionarAssento(this)">
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">A2</span>
+                    <img src="./assets/images/assentos/cadeira-ocupada.png" class="assento ocupado" id="assentoA2" data-posicao="A2" disabled>
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">A3</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoA3" data-posicao="A3" onclick="selecionarAssento(this)">
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">A4</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoA4" data-posicao="A4" onclick="selecionarAssento(this)">
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">A5</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoA5" data-posicao="A5" onclick="selecionarAssento(this)">
+                </div>
+            
+                <!-- Fileira B -->
+                <div class="assento-container">
+                    <span class="posicao">B1</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoB1" data-posicao="B1" onclick="selecionarAssento(this)">
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">B2</span>
+                    <img src="./assets/images/assentos/cadeira-ocupada.png" class="assento ocupado" id="assentoB2" data-posicao="B2" disabled>
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">B3</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoB3" data-posicao="B3" onclick="selecionarAssento(this)">
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">B4</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoB4" data-posicao="B4" onclick="selecionarAssento(this)">
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">B5</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoB5" data-posicao="B5" onclick="selecionarAssento(this)">
+                </div>
+            
+                <!-- Fileira C -->
+                <div class="assento-container">
+                    <span class="posicao">C1</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoC1" data-posicao="C1" onclick="selecionarAssento(this)">
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">C2</span>
+                    <img src="./assets/images/assentos/cadeira-ocupada.png" class="assento ocupado" id="assentoC2" data-posicao="C2" disabled>
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">C3</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoC3" data-posicao="C3" onclick="selecionarAssento(this)">
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">C4</span>
+                    <img src="./assets/images/assentos/cadeira-ocupada.png" class="assento ocupado" id="assentoC4" data-posicao="C4" disabled>
+                </div>
+                <div class="assento-container">
+                    <span class="posicao">C5</span>
+                    <img src="./assets/images/assentos/cadeira-disponivel.png" class="assento" id="assentoC5" data-posicao="C5" onclick="selecionarAssento(this)">
+                </div>
+            </div>
+
+            <p class="tela">TELA</p>
+
+            <div class="info-assentos">
+                <p><strong>Assentos ocupados:</strong> <span class="ocupado">Cinza</span></p>
+                <p><strong>Assentos disponíveis:</strong> <span class="disponivel">Verde</span></p>
+                <p><strong>Assentos selecionados:</strong> <span class="selecionado">Roxo</span></p>
+                <p><strong>Total:</strong> R$ <span id="total">0.00</span></p>
+            </div>
+
+            <div class="botao-proximo-container">
+                <a href="./combos.html" class="botao-proximo">Próximo</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <small>&copy; CineVali - Desenvolvido por Vitor Hugo Reis e Thiago Wyse</small>
+    </footer>
+
+    <script type="text/javascript" src="./assets/scripts/assentos.js"></script>
+</body>
+
+</html>

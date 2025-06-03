@@ -1,0 +1,128 @@
+.revisao-container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.revisao-container h2 {
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-left: 4px solid #007BFF;
+    padding-left: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid #444;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    background-color: #2a2a2a;
+    color: #ddd;
+}
+
+.total-container {
+    text-align: right;
+    font-size: 20px;
+    margin: 20px 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.valor-total-container,
+.valor-pago-container,
+.troco-total-container {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+    text-align: right;
+}
+
+.valor-total-container label,
+.valor-pago-container label {
+    font-weight: 600;
+    margin-right: 10px;
+    color: #fff;
+}
+
+#valor-total-geral,
+#valor-pago,
+#valor-troco {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+#modal-obrigado div {
+    background: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    animation: fadeIn 0.4s ease-out;
+}
+
+#modal-obrigado img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+#modal-obrigado h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #007BFF;
+}
+
+#modal-obrigado p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+#fechar-modal-obrigado {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#fechar-modal-obrigado:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/filmes.css">
+    <title>Filmes em cartaz • CineVali</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="./assets/images/global/logo.png" alt="Logo CineVali" class="logo">
+            <div class="localizacao">
+                <img src="./assets/images/global/icone-local.png" alt="Ícone de localização">
+                <div class="localizacao-textos">
+                    <p class="texto1">Programação em</p>
+                    <p class="texto2">ITAJAÍ - SC</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img src="./assets/images/filmes/banner.jpg" alt="Banner do Filme Superman">
+        </div>
+
+        <h1 class="titulo-pagina">Filmes em Cartaz</h1>
+
+        <div class="filmes-container">
+
+        </div>
+    </main>
+
+    <div class="popup" id="popup">
+        <div class="popup-conteudo">
+            <h2></h2>
+            <p><strong>Gênero:</strong> <span id="genero"></span></p>
+            <p><strong>Sinopse:</strong> <span id="sinopse"></span></p>
+            <p><strong>Horários:</strong> <span id="horarios"></span></p>
+            <p><strong>Sala:</strong> <span id="sala"></span></p>
+            <p><strong>Preço:</strong> R$ <span id="preco-filme"></span></p>
+            <button class="fechar-popup" id="fecharPopup">Fechar</button>
+        </div>
+    </div>
+    
+    <div class="popup" id="popup-sessoes">
+        <div class="popup-conteudo">
+            <h2>Selecione a Sessão:</h2>
+            <p id="sala-filme"><strong>Sala:</strong> <span id="numero-sala"></span></p>
+            <p><strong>Preço:</strong> R$ <span id="preco-sessao"></span></p>
+            
+            <div class="agendamento-dias" id="dias-container"></div>
+            
+            <div class="selecionar-horario">
+                <div class="agendamento-horarios" id="horarios-container"></div>
+            </div>
+            
+            <div class="botoes-popup">
+                <button class="fechar-popup">Fechar</button>
+                <a href="./assentos.html"><button class="botao-proximo-popup">Próximo</button></a>
+            </div> 
+        </div>
+    </div>
+
+    <footer>
+        <small>&copy; CineVali - Desenvolvido por Vitor Hugo Reis e Thiago Wyse</small>
+    </footer>
+
+    <script type="text/javascript" src="./assets/scripts/filmes.js"></script>
+</body>
+
+</html>
